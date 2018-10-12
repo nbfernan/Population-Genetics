@@ -33,13 +33,16 @@ How to use STRUCTURE GUI on Mac:
 			Select for a “Separate Alpha for each population” 
 			De-select to “Use a Uniform Prior for ALPHA”
 	d. Save your parameter set
-		I usually name is something that has to do with the parameters (e.g., 		“burnin10k_mcmc100k_alpha0.5”
+		I usually name is something that has to do with the parameters (e.g., “burnin10k_mcmc100k_alpha0.5”
 6. Enter in the Project tab (from main window):
 	a. Select to start a job
 	b. Select for that parameter set you just created (or former ones you created with this dataset already)
 	c. Set K (at least 3 more values than what you anticipate)
 	d. If you want to use a set value, manually expand the window so you can set the seed
 	e. Enter number of iterations
+	
+7. Start your job
+
 
 	
 
