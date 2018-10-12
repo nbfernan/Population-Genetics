@@ -1,0 +1,45 @@
+## STRUCTURE GUI instructions (for MacOS)
+How to use STRUCTURE GUI on Mac:
+
+1. Launch STRUCTURE GUI from Applications
+  Use GenAlEx to get STRUCTURE input data file 
+
+
+2. Enter in the structure for the data file : 
+	Number of individuals= XX
+	Ploidy of data= 2
+	Number of Loci= XX
+	Missing data value= -99 (whatever number you used for missing data in your genotype files)
+
+3. Check off: 
+	Row of marker names
+	Data file stores data for individuals in a single line 
+
+4. Check off:
+	Individual ID for each individual
+	Putative population for each individual
+	USEPOPINFO selection flag (GenAlEx automatically enters this into your data file)
+
+5. Enter in data parameter set (tab from the main window): 
+	a. Click “New…”
+	b. While in the tab “Run length”: 
+		Length of Burnin Period= 10000 (burnin is usually 10% of your MCMC reps)
+		Number of MCMC Reps after Burnin= 10000 
+	c. Click on the tab “Ancestry Model”
+		Make sure the “Use Admixture Model is selected for and click “Advanced…”
+			For my analyses, I did not select for any other options 
+		Make sure “Infer ALPHA” is selected for and click “Advanced…”
+			Enter the Initial ALPHA to be 0.5 (1/K)
+			Select for a “Separate Alpha for each population” 
+			De-select to “Use a Uniform Prior for ALPHA”
+	d. Save your parameter set
+		I usually name is something that has to do with the parameters (e.g., 		“burnin10k_mcmc100k_alpha0.5”
+6. Enter in the Project tab (from main window):
+	a. Select to start a job
+	b. Select for that parameter set you just created (or former ones you created with this dataset already)
+	c. Set K (at least 3 more values than what you anticipate)
+	d. If you want to use a set value, manually expand the window so you can set the seed
+	e. Enter number of iterations
+
+	
+
